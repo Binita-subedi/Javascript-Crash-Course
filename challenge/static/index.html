@@ -1,45 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Javascript on Steroids</title>
-  <link rel= "stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <link rel ="stylesheet" href ="style.css">
-</head>
-<body>
-  
-<div class="container-1">
-  <h2>Challenge 1: Your Age </h2>
-  <div class="flex-box-container-1">
-   <div>
-    <button class = "btn btn-primary" onclick="ageInDays()">Click me</button>
-   </div>
-   <div>
-    <button class = "btn btn-danger" onclick="reset()">Reset</button>
-   </div>
-  </div>
-    <div class ="flex-box-container-1">
-         <div id = "flex-box-result"></div>
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript on Steroids</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+
+    <div class="container-1">
+      <h2>Challenge 1: Your Age </h2>
+      <div class="flex-box-container-1">
+        <div>
+          <button class="btn btn-primary" onclick="ageInDays()">Click Me To Check Your Age In Days.</button>
+        </div>
+        <div>
+          <button class="btn btn-danger" onclick="reset()">Reset</button>
+        </div>
+      </div>
+      <div class="flex-box-container-1">
+        <div id="flex-box-result"></div>
+      </div>
     </div>
-  </div>
-  <div class =" container-2">
+    <div class=" container-2">
       <h2>Challenge 2: Generate Gif</h2>
-      <button class="btn btn-success" id="gif-generator"onclick="generate()">Generate</button>
-      
-      <div class="flex-box-container-2"
-      id ="gen-gif">
+      <button class="btn btn-success" id="gif-generator" onclick="generate()">Generate</button>
+
+      <div class="flex-box-container-2" id="gen-gif">
       </div>
     </div>
-    <div class ="container-3">
+    <div class="container-3">
       <h2>Challenge 3: Rock, Paper, Scissor</h2>
-      <div class="flex-b0x-rps" id="flex-box-rps-div">
-        <img src = "">
+      <div class="flex-box-rps" id="flex-box-rps-div">
+        <img id='scissor'
+          src="https://cdn2.vectorstock.com/i/thumb-large/95/51/scissors-clip-art-cartoon-vector-1509551.jpg" height=150
+          width=150 alt="Scissor" onclick="rpsGame(this)">
+        <img id='paper'
+          src="https://cdn0.iconfinder.com/data/icons/rock-paper-scissors-emoji/792/rock-paper-scissors-emoji-cartoon-005-512.jpg"
+          height=150 width=150 alt="Paper" onclick="rpsGame(this)">
+        <img id='rock' src="https://murabac.github.io/rock_paper_scissors_ui/images/rock.png" height=150 width=150
+          alt="Rock" onclick="rpsGame(this)">
       </div>
     </div>
-    <script src = "C:\Users\Binita Subedi\Desktop\javascript crash course\challenge\static\chal.js">
+    <script src="C:\Users\Binita Subedi\Desktop\javascript crash course\challenge\static\chal.js">
 
     </script>
   </body>
 
-</html> 
+</html>
